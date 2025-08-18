@@ -4,7 +4,7 @@ import { FileText } from 'lucide-react'
 import type { SiteContent } from '../lib/types'
 
 const links = [
-  { id: 'contact', label: 'Contact' },
+  { id: 'about', label: 'About' },
   { id: 'research', label: 'Research' },
   { id: 'experience', label: 'Experience' },
   { id: 'publications', label: 'Publications' },
@@ -13,7 +13,7 @@ const links = [
 
 export default function Navbar({ content }: { content: SiteContent | null }) {
   const [open, setOpen] = useState(false)
-  const [active, setActive] = useState('contact')
+  const [active, setActive] = useState('about')
 
   useEffect(() => {
     const observer = new IntersectionObserver(

@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import content from './content/site.json'
 import type { SiteContent } from './lib/types'
 import Navbar from './components/Navbar'
-import Contact from './components/Contact'
+import About from './components/About'
 import Section from './components/Section'
 // import About from './components/About'
 import Experience from './components/Experience'
@@ -28,8 +28,8 @@ export default function App() {
     <div>
       <Navbar content={data} />
       <main className="mt-10 space-y-3 md:space-y-3">
-        <Section id="contact" title="">
-          <Contact content={data} />
+        <Section id="about" title="">
+          <About content={data} />
         </Section>
         <Section id="research" title="Research">
           <Projects content={data} />
