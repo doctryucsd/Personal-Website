@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "siteName": "Chien-Yi Yang",
+    "description": "Single-page portfolio for job searching",
+    "photo": "profile.jpg"
+  },
+  "links": {
+    "email": "chy036@ucsd.edu",
+    "linkedin": "https://www.linkedin.com/in/chien-yi-yang-a88775179/",
+    "github": "https://github.com/doctry",
+    "githubSchool": "https://github.com/doctryucsd",
+    "scholar": "https://scholar.google.com/citations?user=Wg9aCrsAAAAJ&hl=en",
+    "resumeUrl": "resume.pdf"
+  },
+  "about": {
+    "summary": "4th-year CS Ph.D. candidate at UCSD with experience in compiler optimization for processing-in-memory (PIM) architectures, and large-language-model (LLM) training.",
+    "highlights": [
+      "AI Accelerators",
+      "Software-Hardware Co-Design",
+      "Processing-in-Memory (PIM)",
+      "Bayesian Optimization"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Teaching Assistant",
+      "org": "UC San Diego",
+      "start": "2024-01",
+      "end": "Present",
+      "points": [
+        "Mentored 200+ students in Boolean algebra and digital design.",
+        "Authored assignments and guided debugging sessions."
+      ],
+      "tech": [
+        "Verilog",
+        "Python"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Digital PIM Optimization Toolchain",
+      "summary": "Unified graph-based representation and analytical model for early-stage co-design & DSE.",
+      "links": {
+        "paper": "https://arxiv.org/abs/XXXX",
+        "code": "https://github.com/USERNAME/REPO",
+        "slides": "https://example.com/slides"
+      },
+      "tags": [
+        "PIM",
+        "Graph IR",
+        "Analytical modeling"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "authors": "C.-Y. Yang et al.",
+      "title": "A Unified Representation for Digital PIM Co-Design",
+      "venue": "ASPLOS",
+      "year": "2025",
+      "url": "https://arxiv.org/abs/XXXX",
+      "selected": true
+    }
+  ],
+  "skills": {
+    "programming": [
+      "Python",
+      "C++",
+      "Rust",
+      "Tcl",
+      "JavaScript",
+      "Java",
+      "Matlab"
+    ],
+    "ML": [
+      "PyTorch",
+      "BoTorch",
+      "Ax"
+    ],
+    "hardware": [
+      "Verilog",
+      "Timeloop",
+      "Ramulator"
+    ],
+    "technologies": [
+      "Git",
+      "Docker",
+      "Kubernetes",
+      "Design Compiler",
+      "Innovus"
+    ],
+    "languages": [
+      "English",
+      "Mandarin",
+      "Taiwanese",
+      "Japanese",
+      "Spanish"
+    ]
+  }
+}

@@ -1,35 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useMemo, useState } from 'react'
+import content from './content/site.json'
+import type { SiteContent } from './lib/types'
+import Navbar from './components/Navbar'
+import Contact from './components/Contact'
+import Section from './components/Section'
+// import About from './components/About'
+import Experience from './components/Experience'
+import Projects from './components/Projects'
+import Publications from './components/Publications'
+import Skills from './components/Skills'
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [data, setData] = useState<SiteContent | null>(null)
+
+  useEffect(() => {
+    // In a real app, you might fetch this; here we import JSON directly
+    setData(content as SiteContent)
+  }, [])
+
+  const siteName = data?.meta.siteName ?? 'Your Name'
+
+  useEffect(() => {
+    document.title = siteName
+  }, [siteName])
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <Navbar content={data} />
+      <main className="mt-10 space-y-3 md:space-y-3">
+        <Section id="contact" title="">
+          <Contact content={data} />
+        </Section>
+        <Section id="experience" title="Experience">
+          <Experience content={data} />
+        </Section>
+        <Section id="projects" title="Projects & Research">
+          <Projects content={data} />
+        </Section>
+        <Section id="publications" title="Publications">
+          <Publications content={data} />
+        </Section>
+        <Section id="skills" title="Skills">
+          <Skills content={data} />
+        </Section>
+      </main>
+    </div>
   )
 }
-
-export default App

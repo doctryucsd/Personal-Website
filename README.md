@@ -1,69 +1,46 @@
-# React + TypeScript + Vite
+# Personal Website (Single Page, React + Vite + Tailwind)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modular, single-page portfolio with **Contact first** (top). It’s ready to deploy to **GitHub Pages** via Actions.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Quick Start
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Edit your content in `src/content/site.json`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Build
+```bash
+npm run build
+npm run preview
 ```
+
+## Deploy to GitHub Pages
+
+1. **Create a repo on GitHub**.
+   - For a **user site** (recommended): name it `YOUR_USERNAME.github.io`.
+   - For a **project site**: any name is fine, e.g., `portfolio`.
+
+2. **Set the Vite base path** (only for project sites).
+   - Open `vite.config.ts`, set `base: '/REPO_NAME/'`.
+   - For user sites, keep `base: '/'`.
+
+3. **Push to GitHub** (main branch) and enable Pages:
+   - Go to **Settings → Pages → Source = GitHub Actions**.
+   - The workflow at `.github/workflows/deploy.yml` will build and publish automatically on every push to `main`.
+
+4. **URL**:
+   - User site: `https://YOUR_USERNAME.github.io`
+   - Project site: `https://YOUR_USERNAME.github.io/REPO_NAME/`
+
+> The workflow copies `dist/index.html` to `dist/404.html` to support SPA routing refreshes.
+
+## Customize
+- Update `src/content/site.json` (links, experience, projects, etc.).
+- To show a **Resume** button, set `links.resumeUrl` to `/resume.pdf` and place a file at `public/resume.pdf`.
+
+## Tech
+- React 18, TypeScript, Vite 5
+- Tailwind CSS (class-based styling, dark mode via `class`)
+- GitHub Actions for Pages deploy
