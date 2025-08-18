@@ -4,7 +4,7 @@ export default function Projects({ content }: { content: SiteContent | null }) {
   if (!content) return null
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      {content.projects.map((p, idx) => (
+      {content.research.map((p, idx) => (
         <div key={idx} className="rounded-2xl border border-slate-200 dark:border-slate-800 p-4">
           <div className="font-semibold text-lg">{p.title}</div>
           <p className="text-sm text-slate-600 dark:text-slate-300 mt-1">{p.summary}</p>

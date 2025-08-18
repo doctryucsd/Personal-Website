@@ -1,8 +1,9 @@
 {
   "meta": {
     "siteName": "Chien-Yi Yang",
-    "description": "Single-page portfolio for job searching",
-    "photo": "profile.jpg"
+    "description": "Chien-Yi Yang's personal website.",
+    "photo": "profile.jpg",
+    "me": ["Chien-Yi Yang", "C.-Y. Yang", "Yang, Chien-Yi"]
   },
   "links": {
     "email": "chy036@ucsd.edu",
@@ -13,7 +14,7 @@
     "resumeUrl": "resume.pdf"
   },
   "about": {
-    "summary": "4th-year CS Ph.D. candidate at UCSD with experience in compiler optimization for processing-in-memory (PIM) architectures, and large-language-model (LLM) training.",
+    "summary": "4th-year CSE Ph.D. candidate at UCSD with experience in software-hardware co-design for processing-in-memory (PIM) architectures and large-language-model (LLM) training.",
     "highlights": [
       "AI Accelerators",
       "Software-Hardware Co-Design",
@@ -21,46 +22,122 @@
       "Bayesian Optimization"
     ]
   },
-  "experience": [
+  "research": [
     {
-      "role": "Teaching Assistant",
-      "org": "UC San Diego",
-      "start": "2024-01",
-      "end": "Present",
-      "points": [
-        "Mentored 200+ students in Boolean algebra and digital design.",
-        "Authored assignments and guided debugging sessions."
-      ],
-      "tech": [
-        "Verilog",
-        "Python"
-      ]
-    }
-  ],
-  "projects": [
-    {
-      "title": "Digital PIM Optimization Toolchain",
-      "summary": "Unified graph-based representation and analytical model for early-stage co-design & DSE.",
+      "title": "Digital Processing-in-Memory (PIM) Architecture-Mapping Co-Design",
+      "summary": "Co-optimize the architecture design and the mapping of AI workloads on digital PIM architectures by considering the constraints of PIM.",
       "links": {
-        "paper": "https://arxiv.org/abs/XXXX",
-        "code": "https://github.com/USERNAME/REPO",
-        "slides": "https://example.com/slides"
+        "paper": "https://dl.acm.org/doi/full/10.1145/3695053.3731041",
+        "code": "https://github.com/ETHZ-DYNAMO/OptiPIM"
+      },
+      "tags": [
+        "Digital PIM",
+        "Architecture-Mapping Co-Design",
+        "Compiler Optimization"
+      ]
+    },
+    {
+      "title": "Multi-Objective Software-Hardware Co-Optimization for Processing-in-Memory (PIM)",
+      "summary": "Imprvoe the power, performance, area (PPA), and accuracy of PIM architectures by optimizing both hardware and software components using Bayesian optimization techniques, given the non-idealities of PIM.",
+      "links": {
+        "paper": "https://dl.acm.org/doi/abs/10.1145/3676536.3676682",
+        "code": "https://github.com/doctryucsd/HDnn-PIM-Opt"
       },
       "tags": [
         "PIM",
-        "Graph IR",
-        "Analytical modeling"
+        "Software-Hardware Co-Optimization",
+        "Bayesian Optimization"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "R&D Engineer",
+      "org": "Maxeda Technology (Acquired by Synopsys)",
+      "start": "Dec. 2021",
+      "end": "Jun. 2024",
+      "points": [
+        "Deployed a distributed training system of an LLM on a cluster of > 100 GPUs and sped up the system by 30x by careful profiling and reducing the critical path.",
+        "Designed an information retrieval system by augmenting transformers to reduce the error rate by 40%",
+        "Designed and implemented a reinforcement learning method that sped up floorplanning by more than 3 times."
+      ],
+      "tech": [
+        "LLM Training",
+        "Retrieval-Augmented Generation (RAG)",
+        "Distributed Learning",
+        "PyTorch"
+      ]
+    },
+    {
+      "role": "R&D Engineer",
+      "org": "Maxeda Technology (Acquired by Synopsys)",
+      "start": "Sep. 2021",
+      "end": "Dec. 2021",
+      "points": [
+        "Designed experiments to verify a reinforcement learning-based chip design model to justify solution quality."
+      ],
+      "tech": [
+        "Reinforcement Learning",
+        "Macro Placement",
+        "PyTorch"
+      ]
+    },
+    {
+      "role": "Research Assistant",
+      "org": "National Taiwan University",
+      "start": "Sep. 2017",
+      "end": "Jun. 2021",
+      "points": [
+        "Designed and developed a novel qubit mapping framework and algorithm that scales up to 20,000 qubits (only 127 in prior works)."
+      ],
+      "tech": [
+        "Quantum Computing Compilation",
+        "C++"
       ]
     }
   ],
   "publications": [
     {
-      "authors": "C.-Y. Yang et al.",
-      "title": "A Unified Representation for Digital PIM Co-Design",
-      "venue": "ASPLOS",
+      "authors": "Jiantao Liu, Minxuan Zhou, Yue Pan, Chien-Yi Yang, Lana Josipović, Tajana Rosing",
+      "title": "OptiPIM: Optimizing Processing-in-Memory Acceleration Using Integer Linear Programming",
+      "venue": "ISCA",
       "year": "2025",
-      "url": "https://arxiv.org/abs/XXXX",
-      "selected": true
+      "url": "https://dl.acm.org/doi/full/10.1145/3695053.3731041"
+    },
+    {
+      "authors": "Chien-Yi Yang, Minxuan Zhou, Flavio Ponzina, Suraj Sathya Prakash, Raid Ayoub, Pietro Mercati, Mahesh Subedar, Tajana Rosing",
+      "title": "Multi-Objective Software-Hardware Co-Optimization for HD-PIM via Noise-Aware Bayesian Optimization",
+      "venue": "ICCAD",
+      "year": "2024",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3676536.3676682"
+    },
+    {
+      "authors": "Chin-Yi Cheng, Chien-Yi Yang, Yi-Hsiang Kuo, Ren-Chu Wang, Hao-Chung Cheng, Chung-Yang Huang",
+      "title": "Robust Qubit Mapping Algorithm via Double-Source Optimal Routing on Large Quantum Circuits",
+      "venue": "TQC",
+      "year": "2024",
+      "url": "https://dl.acm.org/doi/full/10.1145/3680291"
+    },
+    {
+      "authors": "Andrew B Kahng, Robert R Nerem, Yusu Wang, Chien-Yi Yang (Alphabetical Order)",
+      "title": "NN-Steiner: A Mixed Neural-Algorithmic Approach for the Rectilinear Steiner Minimum Tree Problem",
+      "venue": "AAAI",
+      "year": "2024",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/29200"
+    },
+    {
+      "authors": "Philipp Ennen, Federica Freddi, Chyi-Jiunn Lin, Po-Nien Kung, RenChu Wang, Chien-Yi Yang, Da-Shan Shiu, Alberto Bernacchia",
+      "title": "Hierarchical Representations in Dense Passage Retrieval for Question-Answering",
+      "venue": "FEVER",
+      "year": "2023",
+      "url": "https://aclanthology.org/2023.fever-1.2/"
+    },
+    {
+      "authors": "Fu-Chieh Chang, Yu-Wei Tseng, Ya-Wen Yu, Ssu-Rui Lee, Alexandru Cioba, I-Lun Tseng, Da-shan Shiu, Jhih-Wei Hsu, Cheng-Yuan Wang, Chien-Yi Yang, Ren-Chu Wang, Yao-Wen Chang, Tai-Chen Chen, Tung-Chieh Chen",
+      "title": "Flexible Chip Placement via Reinforcement Learning: Late Breaking Results",
+      "venue": "DAC",
+      "year": "2022",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3489517.3530617"
     }
   ],
   "skills": {

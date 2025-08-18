@@ -5,6 +5,7 @@ export type SiteContent = {
     description?: string
     ogImage?: string
     photo?: string
+    me?: string[]
   }
   links: {
     email?: string
@@ -28,15 +29,10 @@ export type SiteContent = {
     points: string[]
     tech?: string[]
   }>
-  projects: Array<{
+  research: Array<{
     title: string
     summary: string
-    links?: {
-      paper?: string
-      code?: string
-      slides?: string
-      demo?: string
-    }
+    links?: { paper?: string; code?: string; slides?: string; demo?: string }
     tags?: string[]
   }>
   publications: Array<{

@@ -6,7 +6,7 @@ import Contact from './components/Contact'
 import Section from './components/Section'
 // import About from './components/About'
 import Experience from './components/Experience'
-import Projects from './components/Projects'
+import Projects from './components/Research'
 import Publications from './components/Publications'
 import Skills from './components/Skills'
 
@@ -31,11 +31,11 @@ export default function App() {
         <Section id="contact" title="">
           <Contact content={data} />
         </Section>
+        <Section id="research" title="Research">
+          <Projects content={data} />
+        </Section>
         <Section id="experience" title="Experience">
           <Experience content={data} />
-        </Section>
-        <Section id="projects" title="Projects & Research">
-          <Projects content={data} />
         </Section>
         <Section id="publications" title="Publications">
           <Publications content={data} />

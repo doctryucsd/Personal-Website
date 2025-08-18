@@ -5,8 +5,8 @@ import type { SiteContent } from '../lib/types'
 
 const links = [
   { id: 'contact', label: 'Contact' },
+  { id: 'research', label: 'Research' },
   { id: 'experience', label: 'Experience' },
-  { id: 'projects', label: 'Projects' },
   { id: 'publications', label: 'Publications' },
   { id: 'skills', label: 'Skills' },
 ]
