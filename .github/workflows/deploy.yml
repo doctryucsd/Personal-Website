@@ -21,12 +21,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: lts/*, cache: npm }
+        with:
+          node-version: lts/*
+          cache: npm
       - run: npm ci
-      - run: npm run build
-      - uses: actions/configure-pages@v5   # Setup Pages
+      - run: npm run build:pages              # ← use the Pages base here
+      - run: cp dist/index.html dist/404.html # SPA refresh fallback (optional)
+      - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
-        with: { path: ./dist }
+        with:
+          path: ./dist
 
   deploy:
     needs: build
@@ -34,10 +38,6 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    permissions:
-      pages: write
-      id-token: write
     steps:
-      - name: Deploy
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4
