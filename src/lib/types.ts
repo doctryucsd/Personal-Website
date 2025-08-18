@@ -5,6 +5,8 @@ export type SiteContent = {
     description?: string
     ogImage?: string
     photo?: string
+    photoPosition?: string
+    photoZoom?: number
     me?: string[]
   }
   links: {

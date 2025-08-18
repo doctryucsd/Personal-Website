@@ -14,19 +14,23 @@ export default function Contact({ content }: { content: SiteContent | null }) {
   const { meta, links, about } = content
 
   // If you added meta.photo in site.json and placed the file in /public
-  const photoSrc = (meta as any).photo ? import.meta.env.BASE_URL + (meta as any).photo : null
+  const photoSrc = meta.photo ? import.meta.env.BASE_URL + meta.photo : null
+  const photoPos = meta.photoPosition || '50% 50%' // default center
+  const photoZoom = typeof meta.photoZoom === 'number' ? meta.photoZoom : 1
 
   return (
     <div className="flex flex-col items-start md:items-center gap-5 md:gap-7 md:text-center">
       {/* Photo (optional) */}
       {photoSrc && (
         <img
-          src={photoSrc}
-          alt={`${meta.siteName} headshot`}
-          className="h-28 w-28 rounded-full object-cover ring-1 ring-slate-200 dark:ring-slate-800"
-          loading="lazy"
+            src={photoSrc}
+            alt={`${meta.siteName} headshot`}
+            style={{'transform': `scale(${photoZoom})`, objectPosition: photoPos }}
+            className="h-32 w-32 md:h-40 md:w-40 lg:h-48 lg:w-48 rounded-full object-cover ring-1 ring-slate-200 dark:ring-slate-800"
+            loading="lazy"
         />
       )}
+
 
       {/* Name & tagline */}
       <div>

@@ -3,6 +3,7 @@
     "siteName": "Chien-Yi Yang",
     "description": "Chien-Yi Yang's personal website.",
     "photo": "profile.jpg",
+    "photoPosition": "20% 10%",
     "me": ["Chien-Yi Yang", "C.-Y. Yang", "Yang, Chien-Yi"]
   },
   "links": {
