@@ -25,7 +25,7 @@ jobs:
           node-version: lts/*
           cache: npm
       - run: npm ci
-      - run: npm npm run build -- --base=/Personal-Website/
+      - run: npm run build -- --base=/Personal-Website/
       - run: cp dist/index.html dist/404.html # SPA refresh fallback (optional)
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
