@@ -65,7 +65,7 @@
       "tech": [
         "LLM Training",
         "Retrieval-Augmented Generation (RAG)",
-        "Distributed Learning",
+        "Distributed Training",
         "PyTorch"
       ]
     },
