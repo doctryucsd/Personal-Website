@@ -44,6 +44,7 @@ export type SiteContent = {
     year?: string
     url?: string
     selected?: boolean
+    award?: string
   }>
   skills: {
     programming?: string[]

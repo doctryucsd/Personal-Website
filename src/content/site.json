@@ -56,7 +56,7 @@
       "role": "R&D Engineer",
       "org": "MediaTek Research",
       "start": "Dec. 2021",
-      "end": "Jun. 2024",
+      "end": "Jun. 2022",
       "points": [
         "Deployed a distributed training system of an LLM on a cluster of > 100 GPUs and sped up the system by 30x by careful profiling and reducing the critical path.",
         "Designed an information retrieval system by augmenting transformers to reduce the error rate by 40%",
@@ -99,11 +99,24 @@
   ],
   "publications": [
     {
+      "authors": "Chien-Yi Yang, Flavio Ponzina, Minxuan Zhou, Raid Ayoub, Pietro Mercati, Tajana Rosing",
+      "title": "Constraint-Scheduled Bayesian Optimization for Software-Hardware Co-Optimization on HDnn-PIM",
+      "venue": "ESL",
+      "year": "2026"
+    },
+    {
+      "authors": "E. Singh, Dongxia Wu, Chien-Yi Yang, Tajana Rosing, R. Yu, Y. Ma",
+      "title": "Divide and Learn: Multi-Objective Combinatorial Optimization at Scale",
+      "venue": "ICML",
+      "year": "2026"
+    },
+    {
       "authors": "Jiantao Liu, Minxuan Zhou, Yue Pan, Chien-Yi Yang, Lana Josipović, Tajana Rosing",
       "title": "OptiPIM: Optimizing Processing-in-Memory Acceleration Using Integer Linear Programming",
       "venue": "ISCA",
       "year": "2025",
-      "url": "https://dl.acm.org/doi/full/10.1145/3695053.3731041"
+      "url": "https://dl.acm.org/doi/full/10.1145/3695053.3731041",
+      "award": "ISCA Best Artifact Award"
     },
     {
       "authors": "Chien-Yi Yang, Minxuan Zhou, Flavio Ponzina, Suraj Sathya Prakash, Raid Ayoub, Pietro Mercati, Mahesh Subedar, Tajana Rosing",

@@ -37,6 +37,7 @@ export default function Publications({ content }: { content: SiteContent | null 
         <span>{authorsNode}.</span>{' '}
         <i>{p.title}</i>. {p.venue}{p.year ? ` ${p.year}` : ''}.
         {p.url ? <> <a className="underline" href={p.url} target="_blank" rel="noreferrer">link</a></> : null}
+        {p.award ? <> <span className="text-amber-600 dark:text-amber-400 font-semibold">[{p.award}]</span></> : null}
       </li>
     )
   }
