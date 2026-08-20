@@ -99,6 +99,12 @@
   ],
   "publications": [
     {
+      "authors": "Chien-Yi Yang, Jiantao Liu, Yue Pan, Tajana Rosing, Minxuan Zhou, Lana Josipović",
+      "title": "PNMAX: Mapping-Architecture Co-Exploration Framework for Processing near Memory",
+      "venue": "MICRO",
+      "year": "2026"
+    },
+    {
       "authors": "Chien-Yi Yang, Flavio Ponzina, Minxuan Zhou, Raid Ayoub, Pietro Mercati, Tajana Rosing",
       "title": "Constraint-Scheduled Bayesian Optimization for Software-Hardware Co-Optimization on HDnn-PIM",
       "venue": "ESL",
