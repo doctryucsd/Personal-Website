@@ -19,13 +19,28 @@
     "highlights": [
       "AI Accelerators",
       "Software-Hardware Co-Design",
-      "Processing-in-Memory (PIM)",
+      "Processing in Memory (PIM)",
+      "Compute in Memory (CIM)",
+      "Processing near Memory (PNM)",
       "Bayesian Optimization"
     ]
   },
   "research": [
     {
-      "title": "Digital Processing-in-Memory (PIM) Architecture-Mapping Co-Design",
+      "title": "Processing near Memory (PNM) Mapping-Architecture Co-Exploration Framework",
+      "summary": "A fast and general evaluation framework for a mappings on PNM architectures that can co-optimize performance, power, area (PPA), and memory footprint of AI workloads.",
+      "links": {
+        "paper": "To be updated (MICRO'26).",
+        "code": "To be updated."
+      },
+      "tags": [
+        "PNM",
+        "Mapping-Architecture Co-Design",
+        "Compiler Optimization"
+      ]
+    },
+    {
+      "title": "Digital Processing in Memory (PIM) Mapping Optimization",
       "summary": "Co-optimize the architecture design and the mapping of AI workloads on digital PIM architectures by considering the constraints of PIM.",
       "links": {
         "paper": "https://dl.acm.org/doi/full/10.1145/3695053.3731041",
@@ -33,15 +48,16 @@
       },
       "tags": [
         "Digital PIM",
-        "Architecture-Mapping Co-Design",
+        "Mapping-Architecture Co-Design",
         "Compiler Optimization"
       ]
     },
     {
-      "title": "Multi-Objective Software-Hardware Co-Optimization for Processing-in-Memory (PIM)",
+      "title": "Multi-Objective Software-Hardware Co-Optimization for Processing in Memory (PIM)",
       "summary": "Imprvoe the power, performance, area (PPA), and accuracy of PIM architectures by optimizing both hardware and software components using Bayesian optimization techniques, given the non-idealities of PIM.",
       "links": {
-        "paper": "https://dl.acm.org/doi/abs/10.1145/3676536.3676682",
+        "paper 1": "https://dl.acm.org/doi/abs/10.1145/3676536.3676682",
+        "paper 2": "https://ieeexplore.ieee.org/abstract/document/11455539",
         "code": "https://github.com/doctryucsd/HDnn-PIM-Opt"
       },
       "tags": [
@@ -108,12 +124,14 @@
       "authors": "Chien-Yi Yang, Flavio Ponzina, Minxuan Zhou, Raid Ayoub, Pietro Mercati, Tajana Rosing",
       "title": "Constraint-Scheduled Bayesian Optimization for Software-Hardware Co-Optimization on HDnn-PIM",
       "venue": "ESL",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11455539",
       "year": "2026"
     },
     {
-      "authors": "E. Singh, Dongxia Wu, Chien-Yi Yang, Tajana Rosing, R. Yu, Y. Ma",
+      "authors": "Esha Singh, Dongxia Wu, Chien-Yi Yang, Tajana Rosing, Rose Yu, Yian Ma",
       "title": "Divide and Learn: Multi-Objective Combinatorial Optimization at Scale",
       "venue": "ICML",
+      "url": "https://arxiv.org/abs/2602.11346",
       "year": "2026"
     },
     {
