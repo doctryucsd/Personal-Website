@@ -4,7 +4,11 @@
     "description": "Chien-Yi Yang's personal website.",
     "photo": "profile.jpg",
     "photoPosition": "20% 10%",
-    "me": ["Chien-Yi Yang", "C.-Y. Yang", "Yang, Chien-Yi"]
+    "me": [
+      "Chien-Yi Yang",
+      "C.-Y. Yang",
+      "Yang, Chien-Yi"
+    ]
   },
   "links": {
     "email": "chy036@ucsd.edu",
@@ -69,13 +73,13 @@
   ],
   "experience": [
     {
-      "role": "R&D Engineer",
+      "role": "R&D Engineer Intern",
       "org": "MediaTek Research",
       "start": "Dec. 2021",
       "end": "Jun. 2022",
       "points": [
         "Deployed a distributed training system of an LLM on a cluster of > 100 GPUs and sped up the system by 30x by careful profiling and reducing the critical path.",
-        "Designed an information retrieval system by augmenting transformers to reduce the error rate by 40%",
+        "Designed an information retrieval system by augmenting transformers to reduce the error rate.",
         "Designed and implemented a reinforcement learning method that sped up floorplanning by more than 3 times."
       ],
       "tech": [
@@ -86,7 +90,7 @@
       ]
     },
     {
-      "role": "R&D Engineer",
+      "role": "R&D Engineer Intern",
       "org": "Maxeda Technology (Acquired by Synopsys)",
       "start": "Sep. 2021",
       "end": "Dec. 2021",
@@ -105,7 +109,7 @@
       "start": "Sep. 2017",
       "end": "Jun. 2021",
       "points": [
-        "Designed and developed a novel qubit mapping framework and algorithm that scales up to 20,000 qubits (only 127 in prior works)."
+        "Designed and developed a novel qubit mapping framework and algorithm that scales up to 11,969 qubits."
       ],
       "tech": [
         "Quantum Computing Compilation",
@@ -140,7 +144,7 @@
       "venue": "ISCA",
       "year": "2025",
       "url": "https://dl.acm.org/doi/full/10.1145/3695053.3731041",
-      "award": "ISCA Best Artifact Award"
+      "award": "ISCA Distinguished Artifact Award"
     },
     {
       "authors": "Chien-Yi Yang, Minxuan Zhou, Flavio Ponzina, Suraj Sathya Prakash, Raid Ayoub, Pietro Mercati, Mahesh Subedar, Tajana Rosing",
