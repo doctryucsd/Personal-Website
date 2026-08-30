@@ -31,11 +31,11 @@
   },
   "research": [
     {
-      "title": "Processing near Memory (PNM) Mapping-Architecture Co-Exploration Framework",
-      "summary": "A fast and general evaluation framework for a mappings on PNM architectures that can co-optimize performance, power, area (PPA), and memory footprint of AI workloads.",
+      "title": "Processing near Memory (PNM) Mapping-Architecture Co-Exploration Framework (MICRO 2026, to appear)",
+      "summary": "A fast and general evaluation framework for mappings on PNM architectures that can co-optimize performance, power, area (PPA), and memory footprint of AI workloads.",
       "links": {
-        "paper": "To be updated (MICRO'26).",
-        "code": "To be updated."
+        "Paper": "To be updated (MICRO 2026).",
+        "Code": "To be updated."
       },
       "tags": [
         "PNM",
@@ -47,8 +47,8 @@
       "title": "Digital Processing in Memory (PIM) Mapping Optimization",
       "summary": "Co-optimize the architecture design and the mapping of AI workloads on digital PIM architectures by considering the constraints of PIM.",
       "links": {
-        "paper": "https://dl.acm.org/doi/full/10.1145/3695053.3731041",
-        "code": "https://github.com/ETHZ-DYNAMO/OptiPIM"
+        "Paper": "https://dl.acm.org/doi/full/10.1145/3695053.3731041",
+        "Code": "https://github.com/ETHZ-DYNAMO/OptiPIM"
       },
       "tags": [
         "Digital PIM",
@@ -58,11 +58,11 @@
     },
     {
       "title": "Multi-Objective Software-Hardware Co-Optimization for Processing in Memory (PIM)",
-      "summary": "Imprvoe the power, performance, area (PPA), and accuracy of PIM architectures by optimizing both hardware and software components using Bayesian optimization techniques, given the non-idealities of PIM.",
+      "summary": "Improve the power, performance, area (PPA), and accuracy of PIM architectures by optimizing both hardware and software components using Bayesian optimization techniques, given the non-idealities of PIM.",
       "links": {
-        "paper 1": "https://dl.acm.org/doi/abs/10.1145/3676536.3676682",
-        "paper 2": "https://ieeexplore.ieee.org/abstract/document/11455539",
-        "code": "https://github.com/doctryucsd/HDnn-PIM-Opt"
+        "ICCAD'24 Paper": "https://dl.acm.org/doi/abs/10.1145/3676536.3676682",
+        "ESL'26 Paper": "https://ieeexplore.ieee.org/abstract/document/11455539",
+        "Code": "https://github.com/doctryucsd/HDnn-PIM-Opt"
       },
       "tags": [
         "PIM",
@@ -106,8 +106,8 @@
     {
       "role": "Research Assistant",
       "org": "National Taiwan University",
-      "start": "Sep. 2017",
-      "end": "Jun. 2021",
+      "start": "Jul. 2022",
+      "end": "Aug. 2022",
       "points": [
         "Designed and developed a novel qubit mapping framework and algorithm that scales up to 11,969 qubits."
       ],

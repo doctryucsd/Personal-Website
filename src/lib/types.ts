@@ -34,7 +34,7 @@ export type SiteContent = {
   research: Array<{
     title: string
     summary: string
-    links?: { paper?: string; code?: string; slides?: string; demo?: string }
+    links?: Record<string, string | undefined>
     tags?: string[]
   }>
   publications: Array<{
