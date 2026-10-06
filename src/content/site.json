@@ -119,7 +119,7 @@
   ],
   "publications": [
     {
-      "authors": "Chien-Yi Yang, Jiantao Liu, Yue Pan, Tajana Rosing, Minxuan Zhou, Lana Josipović",
+      "authors": "Chien-Yi Yang*, Jiantao Liu*, Yue Pan, Tajana Rosing, Minxuan Zhou, Lana Josipović",
       "title": "PNMAX: Mapping-Architecture Co-Exploration Framework for Processing near Memory",
       "venue": "MICRO",
       "year": "2026"
