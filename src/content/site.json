@@ -19,7 +19,7 @@
     "resumeUrl": "resume.pdf"
   },
   "about": {
-    "summary": "5th-year CSE Ph.D. candidate at UCSD with experience in software-hardware co-design for processing-in-memory (PIM) architectures and large-language-model (LLM) training.",
+    "summary": "I am Chien-Yi Yang, a Ph.D. candidate in Computer Science and Engineering at UC San Diego. My research focuses on software-hardware co-optimization for AI accelerators, with an emphasis on memory-centric computing: processing in memory (PIM), processing near memory (PNM), and compute in memory (CIM).",
     "highlights": [
       "AI Accelerators",
       "Software-Hardware Co-Design",
@@ -200,6 +200,7 @@
     "hardware": [
       "Verilog",
       "Timeloop",
+      "CiMLoop",
       "Ramulator"
     ],
     "technologies": [
